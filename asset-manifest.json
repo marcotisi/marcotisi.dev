@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/marcotisi.dev/static/css/main.f690d06a.chunk.css",
+    "main.js": "/marcotisi.dev/static/js/main.d17c5302.chunk.js",
+    "main.js.map": "/marcotisi.dev/static/js/main.d17c5302.chunk.js.map",
+    "runtime-main.js": "/marcotisi.dev/static/js/runtime-main.8f19289e.js",
+    "runtime-main.js.map": "/marcotisi.dev/static/js/runtime-main.8f19289e.js.map",
+    "static/js/2.b61b96cc.chunk.js": "/marcotisi.dev/static/js/2.b61b96cc.chunk.js",
+    "static/js/2.b61b96cc.chunk.js.map": "/marcotisi.dev/static/js/2.b61b96cc.chunk.js.map",
+    "index.html": "/marcotisi.dev/index.html",
+    "precache-manifest.e04387cdc14de2a6ecd785dcc32bcbb0.js": "/marcotisi.dev/precache-manifest.e04387cdc14de2a6ecd785dcc32bcbb0.js",
+    "service-worker.js": "/marcotisi.dev/service-worker.js",
+    "static/css/main.f690d06a.chunk.css.map": "/marcotisi.dev/static/css/main.f690d06a.chunk.css.map",
+    "static/js/2.b61b96cc.chunk.js.LICENSE.txt": "/marcotisi.dev/static/js/2.b61b96cc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f19289e.js",
+    "static/js/2.b61b96cc.chunk.js",
+    "static/css/main.f690d06a.chunk.css",
+    "static/js/main.d17c5302.chunk.js"
+  ]
+}
