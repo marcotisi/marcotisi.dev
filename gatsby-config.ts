@@ -1,5 +1,6 @@
 export const siteMetadata = {
   title: "marcotisi.dev",
+  siteUrl: "https://marcotisi.dev",
 };
 
 export const plugins = [
