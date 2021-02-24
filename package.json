@@ -1,12 +1,17 @@
 {
   "name": "marcotisi.dev",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "marcotisi.dev",
+  "description": "Marco Tisi Personal Website",
   "author": "Marco Tisi",
   "keywords": [
+    "marco",
+    "tisi",
+    "personal",
+    "website",
     "gatsby"
   ],
+  "homepage": "https://www.marcotisi.dev",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -22,8 +27,16 @@
     "gatsby-plugin-sass": "^3.2.0",
     "gatsby-plugin-sitemap": "^2.12.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "sass": "^1.32.8"
+  },
+  "devDependencies": {
+    "@amazeelabs/eslint-config": "^1.2.3",
+    "@amazeelabs/prettier-config": "^1.1.0",
+    "@types/react-dom": "^17.0.1",
+    "eslint": "^7.20.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2"
   }
 }
