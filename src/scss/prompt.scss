@@ -1,0 +1,24 @@
+@import "variables";
+@import "mixins";
+
+form {
+
+  label {
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+
+    input {
+      background: none;
+      border: none;
+      color: $color;
+      font-family: $font-family;
+      @include fluid-type($min-width, $max-width, $min-font-size, $max-font-size);
+      outline: none;
+      -webkit-appearance: none;
+      flex-grow: 100;
+      margin-left:10px;
+      min-width: 0;
+    }
+  }
+}

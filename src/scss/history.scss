@@ -1,0 +1,12 @@
+#history {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    > div {
+      white-space: break-spaces;
+      word-break: break-all;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixins";
+
+html {
+  margin: 0;
+  padding: 0;
+  @include fluid-type($min-width, $max-width, $min-font-size, $max-font-size);
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+    line-height: 1.5rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $background-color;
+    color: $color;
+
+    &::-webkit-scrollbar-track {
+      background-color: map-get($colors, "darker-gray");
+    }
+
+    &::-webkit-scrollbar {
+      width: 0.5rem;
+      background-color: map-get($colors, "darker-gray");
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: map-get($colors, "gray");
+    }
+
+    a {
+      color: $color;
+    }
+
+    main {
+      padding: 1rem;
+    }
+  }
+}
