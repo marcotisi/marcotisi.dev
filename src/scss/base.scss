@@ -8,7 +8,7 @@ html {
 
   body {
     margin: 0;
-    padding: 0;
+    padding: 1rem;
     font-family: $font-family;
     line-height: 1.5rem;
     -webkit-font-smoothing: antialiased;
@@ -33,8 +33,5 @@ html {
       color: $color;
     }
 
-    main {
-      padding: 1rem;
-    }
   }
 }
