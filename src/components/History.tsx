@@ -5,7 +5,7 @@ import { Prompt } from "./Prompt";
 
 export const History: React.FC = () => {
   const { history } = useHistory();
-  console.log(history);
+
   return (
     <>
       {history.map(({ element, command }, index) => (
