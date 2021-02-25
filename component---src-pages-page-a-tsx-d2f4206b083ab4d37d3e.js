@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{sxZi:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),i=t.n(a),l=t("Wbzz");n.default=function(){return i.a.createElement("main",null,i.a.createElement("title",null,"Page A"),i.a.createElement(l.Link,{to:"/"},"Main"))}}}]);
+//# sourceMappingURL=component---src-pages-page-a-tsx-d2f4206b083ab4d37d3e.js.map
