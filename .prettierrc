@@ -1,1 +1,2 @@
-"@amazeelabs/prettier-config"
+trailingComma: "all"
+proseWrap: "always"

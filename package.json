@@ -34,7 +34,6 @@
   },
   "devDependencies": {
     "@amazeelabs/eslint-config": "^1.2.3",
-    "@amazeelabs/prettier-config": "^1.1.0",
     "@types/react-dom": "^17.0.1",
     "eslint": "^7.20.0",
     "prettier": "^2.2.1",

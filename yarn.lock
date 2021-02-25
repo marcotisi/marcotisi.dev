@@ -17,11 +17,6 @@
     eslint-plugin-react-hooks "^4.2.0"
     eslint-plugin-simple-import-sort "^7.0.0"
 
-"@amazeelabs/prettier-config@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@amazeelabs/prettier-config/-/prettier-config-1.1.0.tgz#44d4caee9d429a96eb28412769f73da69d24f307"
-  integrity sha512-RSPmaaU4rJpCpRvl+UOU8hzDBiAIAl1J3Uok512PwEO3oG+tPz99zJU4G7VXFKOcqnALoENSiiGefZde3Jj3xA==
-
 "@ardatan/aggregate-error@0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@ardatan/aggregate-error/-/aggregate-error-0.0.6.tgz#fe6924771ea40fc98dc7a7045c2e872dc8527609"
