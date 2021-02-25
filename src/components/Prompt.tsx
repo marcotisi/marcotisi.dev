@@ -1,21 +1,44 @@
-import { navigate } from 'gatsby';
-import React, { FormEvent, useRef, useState } from 'react';
+import { navigate } from "gatsby";
+import React, { FormEvent, ReactNode, useRef, useState } from "react";
+
+import { useHistory } from "../hooks";
 
 type PromptProps = {
   active?: boolean;
   value?: string;
+  command?: string;
+  element?: ReactNode;
 };
 
-export const Prompt: React.FC<PromptProps> = ({ active = true, value }) => {
-  const [prompt, setPrompt] = useState(value || '');
+export const Prompt: React.FC<PromptProps> = ({
+  active = true,
+  value,
+  command: currentCommand,
+  element,
+}) => {
+  const { pushToHistory, clearHistory } = useHistory();
+  const [prompt, setPrompt] = useState(value || "");
+
   const inputElement = useRef<HTMLInputElement>(null);
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (prompt) {
-      navigate(`/${prompt}`);
+    const command = prompt.trim();
+    setPrompt("");
+    if (command === "clear") {
+      clearHistory();
+      navigate("/");
+      return;
     }
-    setPrompt('');
+
+    if (currentCommand !== command) {
+      navigate(`/${command}`);
+    } else {
+      pushToHistory({
+        command,
+        element: element,
+      });
+    }
   };
 
   return (
