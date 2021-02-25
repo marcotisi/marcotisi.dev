@@ -1,5 +1,11 @@
 import { navigate } from "gatsby";
-import React, { FormEvent, ReactNode, useRef, useState } from "react";
+import React, {
+  FormEvent,
+  ReactNode,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 
 import { useHistory } from "../hooks";
 
@@ -20,6 +26,22 @@ export const Prompt: React.FC<PromptProps> = ({
   const [prompt, setPrompt] = useState(value || "");
 
   const inputElement = useRef<HTMLInputElement>(null);
+
+  const focusInput = () => {
+    if (document.activeElement !== inputElement.current) {
+      inputElement.current?.focus();
+    }
+  };
+
+  useEffect(() => {
+    if (!active) {
+      return;
+    }
+    document.addEventListener("keydown", focusInput);
+    return () => {
+      document.removeEventListener("keydown", focusInput);
+    };
+  }, [active]);
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -56,7 +78,6 @@ export const Prompt: React.FC<PromptProps> = ({
           autoCorrect="off"
           spellCheck="false"
           onChange={(e) => setPrompt(e.currentTarget.value)}
-          onBlur={() => inputElement.current && inputElement.current.focus()}
           readOnly={!active}
           disabled={!active}
           autoFocus
