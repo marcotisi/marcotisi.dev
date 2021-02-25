@@ -35,6 +35,7 @@ export const Header: React.FC = () => {
       {data.site?.siteMetadata?.description && (
         <p>{data.site.siteMetadata.description}</p>
       )}
+      <small>Type &lsquo;help&rsquo; and press Enter to start</small>
     </header>
   );
 };
