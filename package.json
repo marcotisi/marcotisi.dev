@@ -17,7 +17,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "predeploy": "gatsby build --prefix-paths",
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^2.32.3",
@@ -38,6 +40,7 @@
     "@amazeelabs/eslint-config": "^1.2.3",
     "@types/react-dom": "^17.0.1",
     "eslint": "^7.20.0",
+    "gh-pages": "^3.1.0",
     "prettier": "^2.2.1",
     "typescript": "^4.2.2"
   }
