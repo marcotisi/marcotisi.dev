@@ -16,4 +16,12 @@ export const plugins = [
       icon: "src/images/icon.png",
     },
   },
+  {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      name: "commands",
+      path: `${__dirname}/src/commands`,
+    },
+  },
+  "gatsby-transformer-remark",
 ];
