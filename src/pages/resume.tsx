@@ -1,8 +1,10 @@
-import { PageProps } from 'gatsby';
-import React from 'react';
+import { PageProps } from "gatsby";
+import React from "react";
+
+import { Layout } from "../components";
 
 export const Resume: React.FC<PageProps> = () => (
-  <>
+  <Layout>
     <div>
       {`Marco Tisi
 
@@ -147,9 +149,9 @@ Developing of business websites both static and dynamic.`}
     <br />
     <a href="/Marco_Tisi_-_Curriculum.pdf" target="_blank">
       Download
-    </a>{' '}
+    </a>{" "}
     a PDF version of my resume
-  </>
+  </Layout>
 );
 
 export default Resume;

@@ -1,8 +1,10 @@
-import { PageProps } from 'gatsby';
-import React from 'react';
+import { PageProps } from "gatsby";
+import React from "react";
+
+import { Layout } from "../components";
 
 export const Links: React.FC<PageProps> = () => (
-  <div>
+  <Layout>
     {`Here's a list of my links
 
   ▪ GitHub: `}
@@ -31,7 +33,7 @@ export const Links: React.FC<PageProps> = () => (
     >
       https://twitter.com/tisi_marco
     </a>
-  </div>
+  </Layout>
 );
 
 export default Links;

@@ -1,8 +1,10 @@
-import { PageProps } from 'gatsby';
-import React from 'react';
+import { PageProps } from "gatsby";
+import React from "react";
+
+import { Layout } from "../components";
 
 export const Passions: React.FC<PageProps> = () => (
-  <>
+  <Layout>
     <div>
       {`Photography
 
@@ -26,7 +28,7 @@ My current equipment is:
       rel="noopener noreferrer"
     >
       Checkout
-    </a>{' '}
+    </a>{" "}
     my profile on 500 px
     <div>
       {`
@@ -69,7 +71,7 @@ other surfers. You feel in peace with yourself.
 If you have the opportunity, I highly recommend you to try it out!
   `}
     </div>
-  </>
+  </Layout>
 );
 
 export default Passions;
