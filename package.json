@@ -18,7 +18,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "predeploy": "gatsby build --prefix-paths",
+    "predeploy": "gatsby build",
     "deploy": "gh-pages -d public"
   },
   "dependencies": {
