@@ -1,0 +1,1 @@
+{"data":{"allCommand":{"nodes":[{"__typename":"MdxCommand","command":"passions","description":"Discover my passions"},{"__typename":"MdxCommand","command":"links","description":"A list of my links"},{"__typename":"MdxCommand","command":"resume","description":"A text version of my resume"}]}}}

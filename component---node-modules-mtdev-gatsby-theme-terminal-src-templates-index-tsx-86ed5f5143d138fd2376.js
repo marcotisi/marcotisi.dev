@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{HaA9:function(e,n,t){"use strict";t.r(n);var i=t("q1tI"),a=t.n(i),c=t("8bDn"),o=t("iMH3");n.default=function(){var e=Object(o.g)().description;return a.a.createElement(c.a,{title:"Home",description:e})}}}]);
+//# sourceMappingURL=component---node-modules-mtdev-gatsby-theme-terminal-src-templates-index-tsx-86ed5f5143d138fd2376.js.map
