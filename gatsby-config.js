@@ -1,8 +1,37 @@
-// We register the TypeScript evaluator in gatsby-config so we don't need to do
-// it in any other .js file. It automatically reads TypeScript config from
-// tsconfig.json.
-require('ts-node').register();
-require('tsconfig-paths').register();
-
-// Use a TypeScript version of gatsby-config.js.
-module.exports = require('./gatsby-config.ts');
+module.exports = {
+  siteMetadata: {
+    title: "Marco Tisi",
+    description:
+      "Remote Full-Stack Engineer with experience in building eCommerce platforms, CMSs and web applications. Skilled in JavaScript (Typescript, Node.js, React, Gatsby), PHP (Laravel, Symfony) and DevOps (AWS, Docker, Terraform). Experienced in Object Oriented Programming and Functional Programming. Always enjoying learning about new technologies, frameworks and languages.",
+    user: "you",
+    host: "marcotisi.dev",
+    siteUrl: "https://marcotisi.dev",
+    author: "@tisi_marco",
+  },
+  plugins: [
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
+    {
+      resolve: "@mtdev/gatsby-theme-terminal",
+      options: {
+        maxWidth: "100ch",
+        fontFamily:
+          "source-code-pro, Monaco, Menlo, Consolas, 'Courier New', monospace",
+        backgroundColor: "#1B2B34",
+        textColor: "#CDD3DE",
+        promptPrefixColor: "#99C794",
+        promptTextColor: "#5FB3B3",
+        promptSuffixColor: "#EC5f67",
+        scrollbarBackgroundColor: "#4F5B66",
+        scrollbarTrackBackgroundColor: "#4F5B66",
+        scrollbarThumbBackgroundColor: "#A7ADBA",
+      },
+    },
+  ],
+};

@@ -1,10 +1,12 @@
 ---
 command: passions
 title: My passions
-help: discover my passions
+description: Discover my passions
 ---
 
-## Photography
+### Passions
+
+#### Photography
 
 I've always loved to take pictures: freezing a moment let's you never forget
 that feeling you had. I started with a mirrorless camera, an Olympus Pen E-PL6
@@ -18,16 +20,15 @@ My current equipment is:
 - Olympus M.Zuiko 14-42mm f3.5/5.6
 - Olympus M.Zuiko 45mm f1.8
 
-<a href="https://500px.com/marcotisi" target="_blank" rel="noopener noreferrer">Checkout</a>
-my profile on 500 px
+[Checkout](https://500px.com/marcotisi) my profile on 500 px
 
 ---
 
-## Travelling
+#### Travelling
 
-Travelling is another passion: the first plane I took was an intercontinental
+Travelling is another passion: the first flight I took was an intercontinental
 flight from Venice to Seattle to meet with one of my dearest friend who lived in
-Washington State. I stayed for a month and we visited a lot of countries by
+Washington State. I stayed for a month, and we visited a lot of countries by
 train, bus, bicycle, foot and even hitchhiking. Since then, I never stop
 travelling.
 
@@ -48,7 +49,7 @@ Here is a list of countries I visited:
 
 ---
 
-## Surfing
+#### Surfing
 
 Since the first day when I moved to Lanzarote (Canary Islands) I always wanted
 to learn how to surf. After a month I bought a surf board and took some lessons.

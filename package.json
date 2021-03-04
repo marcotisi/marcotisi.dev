@@ -1,8 +1,8 @@
 {
   "name": "marcotisi.dev",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": true,
-  "description": "Marco Tisi Personal Website",
+  "description": "Marco Tisi's Personal Website",
   "author": "Marco Tisi",
   "keywords": [
     "marco",
@@ -22,26 +22,16 @@
     "deploy": "gh-pages -d public"
   },
   "dependencies": {
-    "gatsby": "^2.32.3",
+    "@mdx-js/react": "^1.6.22",
+    "@mtdev/gatsby-theme-terminal": "^1.0.0",
+    "gatsby": "^2.32.8",
     "gatsby-plugin-manifest": "^2.12.1",
     "gatsby-plugin-offline": "^3.10.2",
-    "gatsby-plugin-react-helmet": "^3.10.0",
-    "gatsby-plugin-sass": "^3.2.0",
     "gatsby-plugin-sitemap": "^2.12.0",
-    "gatsby-source-filesystem": "^2.11.1",
-    "gatsby-transformer-remark": "^2.16.1",
-    "normalize.css": "^8.0.1",
     "react": "^16.13.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "sass": "^1.32.8"
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "@amazeelabs/eslint-config": "^1.2.3",
-    "@types/react-dom": "^17.0.1",
-    "eslint": "^7.20.0",
-    "gh-pages": "^3.1.0",
-    "prettier": "^2.2.1",
-    "typescript": "^4.2.2"
+    "gh-pages": "^3.1.0"
   }
 }

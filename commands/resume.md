@@ -1,7 +1,7 @@
 ---
 command: resume
 title: My resume
-help: show a text version of my resume
+description: A text version of my resume
 ---
 
 ## Marco Tisi - Remote Full Stack Engineer
@@ -11,7 +11,7 @@ help: show a text version of my resume
 Remote Full-Stack Engineer with experience in building eCommerce platforms, CMSs
 and web applications. Skilled in JavaScript (Typescript, Node.js, React,
 Gatsby), PHP (Laravel, Symfony) and DevOps (AWS, Docker, Terraform). Experienced
-in Object Oriented Programming and Functional Programming. Always enjoying
+in Object-Oriented Programming and Functional Programming. Always enjoying
 learning about new technologies, frameworks and languages.
 
 ### Employment History
@@ -54,7 +54,7 @@ the internal PHP CMS.
 #### Senior Web Developer | Atena.net, Italy | June 2012 - February 2014
 
 Team leader responsible for the development and maintenance of the corporate
-e-commerce website (www.atena.net).
+e-commerce website.
 
 #### PhoneGap Developer | BlackBeardCrew, Italy | March 2013 - March 2013
 
@@ -83,5 +83,5 @@ static and dynamic.
 
 ---
 
-<a href="/Marco_Tisi-Remote_Full_Stack_Engineer.pdf" target="_blank">Download</a> a PDF
-version of my resume
+[Download](/Marco_Tisi-Remote_Full_Stack_Engineer.pdf) a PDF version of my
+resume
