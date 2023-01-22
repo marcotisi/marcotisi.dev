@@ -3,7 +3,7 @@ module.exports = {
     avatar: "https://lh3.googleusercontent.com/a/AEdFTp7LhdsOWVhlLV5hWcxKCt0jYZj6jk9WMVkeENTt=s192-c-mo",
     title: "Marco Tisi",
     description:
-      "Remote Full-Stack Engineer with experience in building eCommerce platforms, CMSs and web applications. Skilled in JavaScript (Typescript, Node.js, React, Gatsby), PHP (Laravel, Symfony) and DevOps (AWS, Docker, Terraform). Experienced in Object Oriented Programming and Functional Programming. Always enjoying learning about new technologies, frameworks and languages.",
+      "Full Stack Engineer with 19 years of experience building web applications, eCommerce platforms, and CMSs. Skilled in JavaScript (Typescript, Node, React, VueJs), PHP (Laravel, Symfony), and DevOps (AWS, Docker, Terraform). Experienced in Object-Oriented Programming and Functional Programming.",
     user: "you",
     host: "marcotisi.dev",
     siteUrl: "https://marcotisi.dev",
@@ -16,6 +16,12 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
+        name: "Marco Tisi - Full Stack Engineer",
+        short_name: "Marco Tisi",
+        start_url: "https://marcotisi.dev",
+        background_color: "#1B2B34",
+        theme_color: "#CDD3DE",
+        display: "standalone",
       },
     },
     {
