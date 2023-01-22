@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    avatar: "https://lh3.googleusercontent.com/a/AEdFTp7LhdsOWVhlLV5hWcxKCt0jYZj6jk9WMVkeENTt=s192-c-mo",
     title: "Marco Tisi",
     description:
       "Remote Full-Stack Engineer with experience in building eCommerce platforms, CMSs and web applications. Skilled in JavaScript (Typescript, Node.js, React, Gatsby), PHP (Laravel, Symfony) and DevOps (AWS, Docker, Terraform). Experienced in Object Oriented Programming and Functional Programming. Always enjoying learning about new technologies, frameworks and languages.",

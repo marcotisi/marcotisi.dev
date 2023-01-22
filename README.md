@@ -1,13 +1,9 @@
 # Marco Tisi
 
-Remote Full-Stack Engineer with experience in building eCommerce platforms, CMSs
-and web applications.
+Full Stack Engineer with 19 years of experience building web applications, eCommerce platforms, and CMSs.
 
-Skilled in JavaScript (Typescript, Node.js, React, Gatsby), PHP (Laravel,
-Symfony) and DevOps (AWS, Docker, Terraform).
+Skilled in JavaScript (Typescript, Node, React, VueJs), PHP (Laravel, Symfony), and DevOps (AWS, Docker, Terraform).
 
-Experienced in Object Oriented Programming and Functional Programming.
-
-Always enjoying learning about new technologies, frameworks and languages.
+Experienced in Object-Oriented Programming and Functional Programming.
 
 [marcotisi.dev](https://marcotisi.dev)

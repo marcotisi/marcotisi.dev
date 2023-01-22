@@ -1259,10 +1259,10 @@
   resolved "https://registry.yarnpkg.com/@mikaelkristiansson/domready/-/domready-1.0.11.tgz#6a4b5891dccb6402ff4e944de843036ee1ffd4f5"
   integrity sha512-nEBLOa0JgtqahmPrnJZ18epLiFBzxhdKgo4uhN3TaBFRmM30pEVrS9FAEV4tg92d8PTdU+dYQx2lnpPyFMgMcg==
 
-"@mtdev/gatsby-theme-terminal@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@mtdev/gatsby-theme-terminal/-/gatsby-theme-terminal-1.0.1.tgz#4fc94a490ee1eeebecc94b09ec02c3680f9d9e03"
-  integrity sha512-XJrSIOFUIAkR/YAoT7Bqnqi6lBj0fqc+NWTNHVyije0/vkud6QE6TVWNBDRlSVTYObA6P824+Zb6vUcD7CMSvw==
+"@mtdev/gatsby-theme-terminal@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@mtdev/gatsby-theme-terminal/-/gatsby-theme-terminal-1.1.0.tgz#4f81c9f9005e42cad6f8fd100a054e4a731bbe6f"
+  integrity sha512-A9vW2iE7ANUn1aJpbUDZS6K1lmcpO1Ubefob6hzBPgwGsk+/eL8ICGhET1+BJmDkNlu1DePaPwtrU/YnaatS3A==
   dependencies:
     "@mdx-js/mdx" "^1.6.22"
     gatsby-core-utils "^1.10.1"
@@ -2941,9 +2941,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001181:
-  version "1.0.30001196"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001196.tgz#00518a2044b1abf3e0df31fadbe5ed90b63f4e64"
-  integrity sha512-CPvObjD3ovWrNBaXlAIGWmg2gQQuJ5YhuciUOjPRox6hIQttu8O+b51dx6VIpIY9ESd2d0Vac1RKpICdG4rGUg==
+  version "1.0.30001446"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001446.tgz"
+  integrity sha512-fEoga4PrImGcwUUGEol/PoFCSBnSkA9drgdkxXkJLsUBOnJ8rs3zDv6ApqYXGQFOyMPsjh79naWhF4DAxbF8rw==
 
 ccount@^1.0.0, ccount@^1.0.3:
   version "1.1.0"
