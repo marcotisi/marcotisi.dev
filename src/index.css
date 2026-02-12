@@ -1,0 +1,65 @@
+:root {
+  --bg: #263238;
+  --bg-elevated: #2E3C43;
+  --bg-surface: #32424A;
+  --border: #2A373E;
+  --border-highlight: #425B67;
+  --text: #B0BEC5;
+  --text-bright: #EEFFFF;
+  --text-muted: #607D8B;
+  --text-subtle: #546E7A;
+  --contrast: #1E272C;
+  --selection: #546E7A;
+  --accent: #009688;
+  --green: #C3E88D;
+  --yellow: #FFCB6B;
+  --blue: #82AAFF;
+  --red: #F07178;
+  --purple: #C792EA;
+  --orange: #F78C6C;
+  --cyan: #89DDFF;
+  --teal: #80CBC4;
+  --white: #EEFFFF;
+  --error: #FF5370;
+  --font: 'JetBrains Mono', 'Fira Code', 'SF Mono', monospace;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 1px,
+    rgba(0,0,0,0.02) 1px, rgba(0,0,0,0.02) 2px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.25) 100%);
+  pointer-events: none;
+  z-index: 9998;
+}
+
+::selection {
+  background: var(--selection);
+  color: var(--white);
+}
+
+a { color: var(--teal); text-decoration: none; }
+a:hover { color: var(--cyan); text-decoration: underline; }

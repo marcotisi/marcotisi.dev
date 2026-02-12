@@ -1,9 +1,21 @@
-# Marco Tisi
+# marcotisi.dev
 
-Full Stack Engineer with 19 years of experience building web applications, eCommerce platforms, and CMSs.
+Personal website — interactive terminal-themed resume built with React + Vite.
 
-Skilled in JavaScript (Typescript, Node, React, VueJs), PHP (Laravel, Symfony), and DevOps (AWS, Docker, Terraform).
+## Development
 
-Experienced in Object-Oriented Programming and Functional Programming.
+```bash
+npm install
+npm run dev
+```
 
-[marcotisi.dev](https://marcotisi.dev)
+## Deployment
+
+Automatically deployed to GitHub Pages via GitHub Actions on every push to `main`.
+
+## Stack
+
+- React 19
+- Vite 7
+- Material Oceanic theme
+- GitHub Pages

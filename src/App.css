@@ -1,0 +1,346 @@
+.terminal {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin: 0 auto;
+  cursor: text;
+}
+
+/* ── Titlebar ──────────────────────────────── */
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: var(--contrast);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.dots { display: flex; gap: 7px; }
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: var(--red); }
+.dot.yellow { background: var(--yellow); }
+.dot.green { background: var(--green); }
+
+.titlebar-text {
+  color: var(--text-subtle);
+  font-size: 12px;
+}
+
+/* ── Quick Nav ─────────────────────────────── */
+
+.quick-nav {
+  display: flex;
+  gap: 6px;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  flex-shrink: 0;
+  scrollbar-width: none;
+}
+
+.quick-nav::-webkit-scrollbar { display: none; }
+
+.nav-btn {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--teal);
+  font-family: var(--font);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.nav-btn:hover {
+  background: var(--border-highlight);
+  color: var(--cyan);
+  border-color: var(--text-subtle);
+}
+
+/* ── Output ────────────────────────────────── */
+
+.output {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 20px 8px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-highlight) transparent;
+}
+
+.output::-webkit-scrollbar { width: 6px; }
+.output::-webkit-scrollbar-track { background: transparent; }
+.output::-webkit-scrollbar-thumb {
+  background: var(--border-highlight);
+  border-radius: 3px;
+}
+
+/* ── Input Line ────────────────────────────── */
+
+.input-line {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px 20px;
+  flex-shrink: 0;
+  border-top: 1px solid var(--border);
+}
+
+.prompt {
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.prompt .user { color: var(--green); font-weight: 600; }
+.prompt .at { color: var(--text-subtle); }
+.prompt .host { color: var(--blue); font-weight: 600; }
+.prompt .colon { color: var(--text-subtle); }
+.prompt .path { color: var(--purple); }
+.prompt .symbol { color: var(--cyan); font-weight: 700; margin: 0 6px 0 8px; }
+
+.cmd-input {
+  background: none;
+  border: none;
+  color: var(--text-bright);
+  font-family: var(--font);
+  font-size: 14px;
+  flex: 1;
+  outline: none;
+  caret-color: var(--accent);
+  min-width: 0;
+}
+
+/* ── ASCII Art ─────────────────────────────── */
+
+.ascii-art {
+  color: var(--teal);
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  opacity: 0.8;
+}
+
+/* ── Welcome ───────────────────────────────── */
+
+.welcome {
+  margin-bottom: 12px;
+  animation: fadeIn 0.4s ease;
+}
+
+/* ── History ───────────────────────────────── */
+
+.history-entry {
+  margin-bottom: 12px;
+  animation: slideIn 0.15s ease;
+}
+
+.cmd-echo {
+  color: var(--text-muted);
+  margin-bottom: 6px;
+  display: flex;
+  align-items: baseline;
+}
+
+.typed-cmd { color: var(--text-bright); }
+
+/* ── Command Output ────────────────────────── */
+
+.cmd-output { padding: 4px 0 8px; }
+
+.section-title {
+  color: var(--yellow);
+  font-weight: 700;
+  font-size: 15px;
+  margin: 8px 0 6px;
+  letter-spacing: 0.5px;
+}
+
+.subsection {
+  color: var(--blue);
+  font-weight: 600;
+  margin: 8px 0 4px;
+}
+
+.text { color: var(--text); }
+.accent { color: var(--teal); }
+.highlight { color: var(--orange); font-weight: 500; }
+.muted { color: var(--text-muted); }
+.subtle { color: var(--text-subtle); }
+.error { color: var(--error); }
+.blank { height: 10px; }
+
+/* ── Whoami ─────────────────────────────────── */
+
+.whoami-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 4px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--border-highlight);
+  flex-shrink: 0;
+}
+
+.whoami-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.whoami-meta {
+  margin-top: 2px;
+}
+
+.summary-text {
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+
+/* ── Job Entries ────────────────────────────── */
+
+.job-entry {
+  margin: 12px 0 16px;
+  padding-left: 12px;
+  border-left: 2px solid var(--border-highlight);
+  transition: border-color 0.2s;
+}
+
+.job-entry:hover {
+  border-left-color: var(--accent);
+}
+
+.job-header { font-size: 14px; }
+
+.job-meta {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.job-description {
+  color: var(--text);
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.job-bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.job-bullets li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 3px;
+  color: var(--text);
+  font-size: 13px;
+}
+
+.job-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* ── Stack Tags ────────────────────────────── */
+
+.stack-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.tag {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+/* ── Contact ───────────────────────────────── */
+
+.contact-row {
+  display: flex;
+  gap: 16px;
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.contact-row .accent { min-width: 90px; }
+
+/* ── Help ───────────────────────────────────── */
+
+.help-row {
+  display: flex;
+  gap: 16px;
+  margin: 3px 0;
+  font-size: 13px;
+}
+
+.help-row .accent { min-width: 140px; }
+
+/* ── Links ─────────────────────────────────── */
+
+.links { margin-top: 4px; }
+
+/* ── Separator ─────────────────────────────── */
+
+.separator {
+  border-top: 1px dashed var(--border-highlight);
+  margin: 16px 0;
+}
+
+/* ── Animations ────────────────────────────── */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Mobile ────────────────────────────────── */
+
+@media (max-width: 640px) {
+  .terminal { max-width: 100%; }
+  .ascii-art { font-size: 8.5px; }
+  .output { padding: 12px 14px 8px; }
+  .input-line { padding: 10px 14px 16px; }
+  .titlebar { padding: 8px 14px; }
+
+  .prompt .user,
+  .prompt .at,
+  .prompt .host,
+  .prompt .colon { display: none; }
+  .prompt .path { display: inline; }
+  .prompt .symbol { margin-left: 0; }
+
+  .whoami-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .avatar { width: 64px; height: 64px; }
+
+  .help-row .accent { min-width: 100px; }
+  .job-entry { padding-left: 8px; }
+}
